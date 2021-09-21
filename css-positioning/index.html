@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="canvas">
+        <div class="interactive-btn">
+            <span>Interactive Mode</span>
+            <input type="checkbox" checked>
+        </div>
+        <div class="mountain">
+            <img src="images/mountains.png" alt="" class="interactive">
+        </div>
+        <div class="sun">
+            <img src="images/sun.png" alt="" class="interactive">
+        </div>
+        <div class="sea">
+            <img src="images/sea.png" alt="" class="interactive">
+        </div>
+        <div class="island">
+            <img src="images/island.png" alt="" class="interactive">
+        </div>
+    </div>
+    <script>
+        document.body.onload = function () {
+            let checkbox = document.querySelector(".interactive-btn > input");
+            checkbox.addEventListener('change', function (event) {
+                if (event.currentTarget.checked) {
+                    document.querySelectorAll("img").forEach((element) => {
+                        element.classList.add('interactive')
+                    })
+                }
+                else {
+                    document.querySelectorAll("img").forEach((element) => {
+                        element.classList.remove('interactive')
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

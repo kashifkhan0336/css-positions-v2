@@ -1,0 +1,36 @@
+.child-1 {
+  background-color: red;
+}
+.child-2 {
+  background-color: slateblue;
+}
+.child-3 {
+  background-color: blue;
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  top: 450px;
+}
+.child-4 {
+  background-color: orange;
+}
+.child-5 {
+  background-color: orangered;
+}
+
+.child {
+  width: 90%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  width: 60%;
+  background-color: black;
+  height: 400px;
+}
+span {
+  color: white;
+  font-weight: 700;
+}
